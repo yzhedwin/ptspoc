@@ -1,0 +1,6 @@
+[submodule "api"]
+	path = api
+	url = git@github.com:yzhedwin/spring-openapi-websocket.git
+[submodule "mmi"]
+	path = mmi
+	url = git@github.com:yzhedwin/javafx-app.git
