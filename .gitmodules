@@ -4,3 +4,6 @@
 [submodule "mmi"]
 	path = mmi
 	url = git@github.com:yzhedwin/javafx-app.git
+[submodule "emulators"]
+	path = emulators
+	url = git@github.com:yzhedwin/openapi-js.git
