@@ -201,7 +201,7 @@ Use this space to list resources you find helpful and would like to give credit 
 [contributors-url]: https://github.com/yzhedwin/ptspoc/graphs/contributors
 [forks-shield]: https://img.shields.io/github/contributors/yzhedwin/ptspoc.svg?style=for-the-badge
 [forks-url]: https://github.com/yzhedwin/ptspoc/network/members
-[stars-shield]: https://img.shields.io/github/stars/yzhedwin/ptpoc.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/yzhedwin/ptspoc.svg?style=for-the-badge
 [stars-url]: https://github.com/yzhedwin/ptspoc/stargazers
 [issues-shield]: https://img.shields.io/github/issues/yzhedwin/ptspoc.svg?style=for-the-badge
 [issues-url]: https://github.com/yzhedwin/ptspoc/issues
