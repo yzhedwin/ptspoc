@@ -123,6 +123,10 @@ _Below is an example of how you can instruct your audience on installing and set
    git submodule sync
    git submodule update --init --recursive
    ```
+3. Build the project with Gradle
+    ```
+    ./gradlew clean build
+    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -130,8 +134,12 @@ _Below is an example of how you can instruct your audience on installing and set
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+You may start the application with the follow command after successful build
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+```
+export SPRING_PROFILES_ACTIVE=client  # or server
+./gradlew :mmi:bootRun
+```
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
