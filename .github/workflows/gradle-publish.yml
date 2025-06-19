@@ -1,0 +1,32 @@
+name: Build and Upload JAR
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true  # Recursively fetch submodules
+          fetch-depth: 0    # Get full history for submodules (optional but safer)
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Build App JAR
+        run: ./gradlew clean :mmi:build
+        
+      - name: Upload JAR to GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            mmi/build/libs/*.jar  # adjust path if necessary
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
